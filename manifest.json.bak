@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "JIRA auto Work log",
+  "version": "1.0",
+  "description": "Automatically sets input value on page refresh",
+  "permissions": [
+    "activeTab",
+    "storage",
+    "alarms"
+  ],
+  "action": {
+    "default_popup": "hello.html",
+    "default_icon": "JIRA.png"
+  },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["libs/crypto-js.min.js"]
+    }
+  ]
+}
