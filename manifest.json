@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "JIRA auto Work log",
+  "name": "Work log",
   "version": "1.0",
   "description": "Automatically sets input value on page refresh",
   "permissions": [
